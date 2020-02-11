@@ -1,0 +1,197 @@
+para usar git en la consola
+git comando  --atributi/condicion/parametro
+con pwd vemos donde nos encontramos
+
+instalar git
+buscar gul bash
+git--version
+git config--global user name "sakina"
+$ git config --global user.email "sakina.elbouda@gmail.com"
+ls muestra directorio
+cd cambiar directorio
+----------------PARA VER DATOS-----------
+
+$ git config --list
+
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+credential.helper=manager
+user.name=Sakina El Boudakhani
+user.email=sakina.elbouda@gmail.com
+
+------------ PARA HACER REPOSITORIO------------------
+CREAR UNA CARPETA
+se hace con mkdir nombre de carpeta
+
+para cambiar de disco duro ponemos d: o c:
+cd.. para volver a atras
+init crea repositorio 
+
+----me situo---
+
+sakin@LAPTOP-4K3UQRDG MINGW64 ~
+$ pwd
+/c/Users/sakin
+
+-- me voy al escritorio
+
+sakin@LAPTOP-4K3UQRDG MINGW64 ~
+$ cd Desktop
+
+--creo carpeta llamada repositorio
+
+sakin@LAPTOP-4K3UQRDG MINGW64 ~/Desktop
+$ mkdir repositorio
+
+--entrro en la carpeta repositorio
+
+sakin@LAPTOP-4K3UQRDG MINGW64 ~/Desktop
+$ cd repositorio
+
+sakin@LAPTOP-4K3UQRDG MINGW64 ~/Desktop/repositorio
+
+----- creamos repositorio----
+
+$ git init GitIntroduccion
+Initialized empty Git repository in C:/Users/sakin/Desktop/repositorio/GitIntroduccion/.git/
+
+
+ls
+GitIntroduccion/
+
+nano nombreFichero.txt
+
+-------------------------------------------------------
+git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        opcionb
+        opcionb.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+
+----------------------------------------------
+
+
+git add nombreFichero.txt
+warning: LF will be replaced by CRLF in nombreFichero.txt.
+The file will have its original line endings in your working directory
+-------------------------------
+
+
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   nombreFichero.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        opcionb
+        opcionb.txt
+
+---------------------------------------------
+si no queremos subir algo pendiente de seguir  
+git rm --cached nombreFichero.txt
+
+
+
+git rm --cached nombreFichero.txt
+rm 'nombreFichero.txt'
+
+sakin@LAPTOP-4K3UQRDG MINGW64 ~/Desktop/repositorio/GitIntroduccion (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        nombreFichero.txt
+        opcionb
+        opcionb.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+-------------------------------
+registrar conjunto de cambios realizados en nuetsro repositorio
+
+ sakin@LAPTOP-4K3UQRDG MINGW64 ~/Desktop/repositorio/GitIntroduccion (master)
+$ git add opcionb
+
+sakin@LAPTOP-4K3UQRDG MINGW64 ~/Desktop/repositorio/GitIntroduccion (master)
+$ git commit --m "primer commit :)"
+[master (root-commit) 3a4c6de] primer commit :)
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 opcionb
+
+sakin@LAPTOP-4K3UQRDG MINGW64 ~/Desktop/repositorio/GitIntroduccion (master)
+$ git log
+commit 3a4c6de577975ef1f1879a7744338c78c1dbeaaa (HEAD -> master)
+Author: Sakina El Boudakhani <sakina.elbouda@gmail.com>
+Date:   Tue Jan 14 16:57:27 2020 +0100
+
+    primer commit :)
+------------------------------------------------------
+
+sakin@LAPTOP-4K3UQRDG MINGW64 ~/Desktop/repositorio/GitIntroduccion (master)
+$ git help commit
+------------------------------------------------------
+
+28/01/2020
+
+sakin@LAPTOP-4K3UQRDG MINGW64 ~/desktop/repositorio
+$ git clone https://github.com/aspittel/coding-cheat-sheets
+Cloning into 'coding-cheat-sheets'...
+remote: Enumerating objects: 351, done.
+remote: Total 351 (delta 0), reused 0 (delta 0), pack-reused 351
+Receiving objects: 100% (351/351), 378.64 KiB | 16.00 KiB/s, done.
+Resolving deltas: 100% (181/181), done.
+
+
+sakin@LAPTOP-4K3UQRDG MINGW64 ~/desktop/repositorio
+$ git clone https://github.com/aspittel/coding-cheat-sheets.git renombramosRepositorio
+Cloning into 'renombramosRepositorio'...
+remote: Enumerating objects: 351, done.
+remote: Total 351 (delta 0), reused 0 (delta 0), pack-reused 351
+Receiving objects: 100% (351/351), 378.64 KiB | 286.00 KiB/s, done.
+Resolving deltas: 100% (181/181), done.
+----------------------------------
+
+
+PARA PONER ALIAS A UN COMMIT
+
+$ git config --global alias.c commit
+le ponemos el alias de c a commit
+
+luego lo usariamos poniendo 
+git c -m"ejemplo alias"
+
+para deshacerlo utilizamos 
+git config --global --unset alias.c
+
+
+
+-----------------------------ç
+etiqueta
+git tag -a v2.45 -m"ejemplo"
+
+git tag 
+git show tag
