@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title><STRONG>Formulario básico</STRONG></title>
+</head>
+<body>
+	<form action="mailto:direcciondelcorreo@correo.com" method="post" enctype="text/plain">
+	<fieldset>
+		<legend>Datos personales</legend>
+		<br>
+		<label for="nombre">Nombre: </label>
+		<input type="text" name="nombre" placeholder="Inserta Nombre" required>
+		<br>
+		<label for="nombre">Primer Apellido: </label>
+		<input type="text" name="apellido1" placeholder="Inserta Primer Apellido" required>
+		<br>
+		<label for="nombre">Segundo Apellido: </label>
+		<input type="text" name="apellido2" placeholder="Inserta Segundo Apellido" required>
+		<br>
+		<br>
+	</fieldset>
+	<LABEL for "provincia">Provincia</LABEL>
+	<select name ="Provincia">
+		<optgroup label= "Aragon">
+		<!--<label for = "comunidad">CCAA:</label>
+		<select name="comunidad">
+		<option>Andalucía</option>
+		<option>Aragón</option>
+		<option>Baleares</option>-->
+		<option value="Z"> Zaragoza</option>
+	</optgroup>
+	</select>
+		</select>
+		<br>
+		<br>
+		<label for=genero> Sexo</label>
+		<p>
+			<input type="radio" name="genero" value="masculino"> Hombre<br>
+		</p>
+			<input type="radio" name="genero" value="femenino" checked />Mujer<br>
+
+	</form>
+</body>
+</html>

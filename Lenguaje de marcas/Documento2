@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ciudades SYSTEM "ciudad.dtd">
+
+<ciudades>
+<ciudad pais="Italia"> Roma</ciudad>
+<ciudad pais="Francia"> Paris</ciudad>
+<ciudad pais="Alemania"> Berlin</ciudad>
+<ciudad> Viena</ciudad>
+
+
+</ciudades>

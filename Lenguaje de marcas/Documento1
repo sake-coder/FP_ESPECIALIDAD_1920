@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE facturas SYSTEM "factura.dtd">
+<facturas>
+<!ELEMENT factura(Numero, importe, empresa)>
+<!ELEMENT numero(#PCDATA)>
+<!ELEMENT importe(#PCDATA)>
+<!ELEMENT empresa(CIF, Nomre Empresa)>
+<!ATTLIST factura CDATA #IMPLIED>
