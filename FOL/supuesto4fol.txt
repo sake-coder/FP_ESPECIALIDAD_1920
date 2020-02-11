@@ -1,0 +1,28 @@
+salario base 1617.60
+antigüedad 4*1617.6*5%=323.52
+prima productividad 230.6
+plus convenio 107,92
+extra =1725.52
+prorrata 2(1725.52/12=143.79)=287,58
+horas extraoridnarias 36.45*3=109.35
+manutencion sin pernocta 2*26.03
+desplazamiento 57-> exento(300*0.19)-57=0
+							2785.63
+irpf 18%
+at y ep 1.35%
+
+
+bccomunes 1617.6+323.52+230.6+107.92+287.58=2567.22
+bccprofesionales 2676.57
+birpf 2676.58-->481.78
+
+contingencia comunes 2567.22*4.7% 	120.65
+desempleo 2676.57*1.55% 			41.48
+formacion profesional 2676.57*0.1%	 2.67
+horas extraordiarias 109.35*4.7%		5.13
+
+birpf 2676.58-->481.78 
+							651.71
+
+
+a-b=2133.92
